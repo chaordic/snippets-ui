@@ -1,39 +1,28 @@
 {
-  "name": "vdb-site",
+  "name": "octopus-pattern",
   "version": "1.0.0",
-  "description": "Vou de ônibus site",
+  "description": "Library element patterns",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/voudeonibus/voudeonibus.github.io.git"
+    "url": ""
   },
-  "keywords": [
-    "Vou",
-    "de",
-    "ônibus"
-  ],
-  "author": "Vou de ônibus",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/voudeonibus/voudeonibus.github.io/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/voudeonibus/voudeonibus.github.io#readme",
+  "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.7.13",
     "gulp": "^3.9.0",
     "gulp-cssmin": "^0.1.7",
     "gulp-file-include": "^0.13.7",
-    "gulp-if": "^1.2.5",
     "gulp-sass": "^2.0.1",
     "gulp-uglify": "^1.2.0",
-    "minimist": "^1.1.1",
-    "node-bourbon": "^4.2.3",
-    "node-neat": "^1.7.2"
-  },
-  "dependencies": {
-    "material-design-icons": "^2.1.3"
+    "minimist": "^1.1.1"
   }
 }
