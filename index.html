@@ -25,10 +25,258 @@
 		<!-- arrow -->
 		<section class="section-card selected" data-section="#arrow">
 			<div class="card">
-					<div class="card-title">Arrow sample</div>
-	<div class="card-content"></div>
+					<!-- 
 
-<div class="card-divisor"></div>
+
+	Arrow simple 1 
+
+
+	-->
+	<div class="card-title">Arrow simple 1</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-simple-1"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-simple-1&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-simple-1 {
+	
+	$size: 15px;
+	$color: $color;
+
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		display: block;
+
+		border: $size solid transparent;
+
+		// top
+		// border-bottom-color: $color;
+
+		// bottom
+		// border-top-color: $color;
+
+		// left
+		// border-right-color: $color;
+
+		// right
+		border-left-color: $color;
+
+		transition: all .3s ease;
+	}
+
+	// optional
+	&:hover:after {
+		transition: all .3s ease;
+		border-left-color: darken($color, 15%);
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / arrow simple 1 -->
+
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+
+	<!-- 
+
+	
+	Arrow simple 2 
+
+
+	-->
+	<div class="card-title">Arrow simple 2</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-simple-2"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-simple-2&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-simple-2 {
+	
+	$size: 20px;
+	$color: $color;
+
+	display: block;
+	width: $size;
+	height: $size;
+	position: relative;
+
+	border-top: $size/10 solid $color;
+	border-left: $size/10 solid $color;
+	transition: all .3s ease;
+
+	// top
+	transform: rotate(45deg);
+
+	// bottom
+	transform: rotate(-135deg);
+
+	// left
+	transform: rotate(-45deg);
+
+	// right
+	transform: rotate(135deg);
+
+	// optional
+	&:hover {
+		transition: all .3s ease;
+		border-top: $size/10 solid darken($color, 15%);
+		border-left: $size/10 solid darken($color, 15%);	
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / arrow simple 2 -->
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+	
+	<!-- 
+
+	
+	Arrow rounded 
+
+
+	-->
+	<div class="card-title">Arrow rounded</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-rounded"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-rounded&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-rounded {
+	
+	$size: 20px;
+	$color: $color;
+
+	display: block;
+	width: $size;
+	height: $size;
+
+	// bottom
+	// transform: rotate(90deg);
+
+	// top
+	// transform: rotate(-90deg);
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: $size;
+		height: $size/5;
+		box-sizing: border-box;
+
+		border-radius: $size/5;
+		background: $color;
+
+		transition: all .3s ease;
+
+		position: relative;
+		top: $size/4;
+	}
+
+	// left
+	&:before {
+		transform-origin: 0%;
+		transform: rotate(-45deg) translate(0, $size/4.5);
+	}
+	&:after {
+		transform-origin: 100%;
+		transform: rotate(45deg) translate($size/3.5, $size/2);
+	}
+
+	// right
+	&:before {
+		transform-origin: 100%;
+		transform: rotate(45deg) translate(0, $size/4.5);
+	}
+	&:after {
+		transform-origin: 100%;
+		transform: rotate(-45deg) translate(0, -$size/4.5);
+	}
+
+
+	// optional
+	&:hover:before,
+	&:hover:after {
+		transition: all .3s ease;
+		background: darken($color, 15%);
+	}
+}</code>
+				</pre>
+			</div>
+		<!-- / arrow rounded -->
+	</div>
+
 			</div>
 		</section>
 		<!-- / arrow -->
@@ -36,7 +284,7 @@
 		<!-- label -->
 		<div data-section="#label" class="section-card">
 			<div class="card">
-				cu
+				
 			</div>
 		</div>
 		<!-- / label -->

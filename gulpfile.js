@@ -18,7 +18,7 @@ var dir_build = path.join(__dirname, 'src/build');
 
 
 gulp.task('fileinclude:watch', function() {
-  gulp.watch(path.join(dir_src, '**/*.html'), ['fileinclude']);
+  gulp.watch(path.join(dir_components, '**/*.html'), ['fileinclude']);
 });
 
 gulp.task('fileinclude', function() {
