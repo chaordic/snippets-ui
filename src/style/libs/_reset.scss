@@ -1,0 +1,61 @@
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	_noFocusLine: expression(this.hideFocus=true);
+	-webkit-font-smoothing: antialiased;
+}
+/* a, button, label { } */
+/* Tira toda e qualquer margen, borda e afeitos pré-definidos pelos navegaores */
+
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	overflow: auto; /* ie6 */
+}
+html, body {
+	width: 100%;
+}
+button, input, select, textarea { vertical-align: baseline; *vertical-align: middle;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; *display: inline;
+*zoom: 1;
+}
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+a {
+	text-decoration: none;
+	display: inline-block;
+*display: inline;
+*zoom: 1;
+	_cursor: pointer;
+}
+/* toda  tag <a /> deve estar com o display: inline-block; isso garente dimenções e ALTURA DE LINHA para o elemento */
+li { list-style: none; } /* pra que resetar o ul, ol e aifns... reset o li logo de uma vez */
+img { -ms-interpolation-mode: bicubic; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+legend { *margin-left: -7px !important;
+}
+button { cursor: pointer; }
+textarea {
+	overflow: auto;
+	resize: none;
+}
+option { display: block !important }
+
+br { float: none !important; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+

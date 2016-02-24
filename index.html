@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chaordic Pattern</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+	<link rel="stylesheet" href="src/build/style.css">
+</head>
+<body>
+
+	<header class="header-site container">
+		<h1>Element Patterns</h1>
+		<div class="header-tabs">
+			<a href="#arrow" class="is-active">Arrow</a>
+			<a href="#label">Label</a>
+		</div>
+	</header>
+
+	<div>
+
+		<!-- arrow -->
+		<section class="section-card selected" data-section="#arrow">
+			<div class="card">
+					<div class="card-title">Arrow sample</div>
+	<div class="card-content"></div>
+
+<div class="card-divisor"></div>
+			</div>
+		</section>
+		<!-- / arrow -->
+
+		<!-- label -->
+		<div data-section="#label" class="section-card">
+			<div class="card">
+				cu
+			</div>
+		</div>
+		<!-- / label -->
+
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="src/build/prism.js"></script>
+	<script src="src/build/clipboard.js"></script>
+
+	<script>
+		new Clipboard('.copy', {
+			target: function(trigger) {
+				return trigger.nextElementSibling;
+			}
+		});
+
+		$(document).ready(function(){
+
+			function tabs(target) {
+				$('[data-section='+target+']').show().siblings().hide();
+				$('[href='+target+']').addClass('is-active').siblings().removeClass('is-active');
+			}
+
+			// tabs init
+			var CurrentHash = window.location.hash;
+			tabs(CurrentHash);
+
+			// tabs
+			$('.header-tabs a').on('click', function(e){
+				e.preventDefault;
+				var target = $(this).attr("href");
+				tabs(target);
+			});
+			
+		})
+	</script>
+</body>
+</html>

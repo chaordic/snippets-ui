@@ -1,0 +1,90 @@
+.label-simple {
+	$size: 30px;
+	$color: $color;
+
+	background: $color;
+	width: $size*2;
+	height: $size;
+	position: relative;
+
+	// optional
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	color: white;
+	font-size: $size/1.5;
+	line-height: $size;
+	text-align: center;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		top: 0;
+		position: absolute;
+
+		// left
+		// left: -$size;
+		// border-right-color: $color; 
+
+		// right
+		right: -$size;
+		border-left-color: $color; 
+	}
+
+	@include center-absolute($size, $size); 
+}
+
+.label-with-circle {
+	$size: 30px;
+	$color: $color;
+
+	background: $color;
+	width: $size*2;
+	height: $size;
+	position: relative;
+
+	// optional
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	color: white;
+	font-size: $size/1.5;
+	line-height: $size;
+	text-align: center;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		top: 0;
+		position: absolute;
+
+		// left
+		// left: -$size;
+		// border-right-color: $color; 
+
+		// right
+		right: -$size;
+		border-left-color: $color; 
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: $size/6;
+		height: $size/6;
+		border-radius: 100%;
+		background: white;
+		position: absolute;
+		top: 50%;
+		margin-top: -$size/12;
+
+		// left
+		// left: -$size/12;
+
+		// right
+		right: -$size/12;
+
+	}
+
+	@include center-absolute($size, $size); 
+}

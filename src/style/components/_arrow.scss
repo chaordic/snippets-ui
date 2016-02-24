@@ -1,0 +1,212 @@
+
+// aroow simples 1
+.arrow-simple-1 {
+	
+	$size: 15px;
+	$color: $color;
+
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		display: block;
+
+		border: $size solid transparent;
+
+		// top
+		// border-bottom-color: $color;
+
+		// bottom
+		// border-top-color: $color;
+
+		// left
+		// border-right-color: $color;
+
+		// right
+		border-left-color: $color;
+
+		transition: all .3s ease;
+	}
+
+	// optional
+	&:hover:after {
+		transition: all .3s ease;
+		border-left-color: darken($color, 15%);
+	}
+
+	width: $size;
+	height: $size;
+	@include center-absolute($size, $size); 
+}
+
+
+// aroow simples 2
+.arrow-simple-2 {
+	
+	$size: 20px;
+	$color: $color;
+
+	display: block;
+	width: $size;
+	height: $size;
+	position: relative;
+
+	border-top: $size/10 solid $color;
+	border-left: $size/10 solid $color;
+	transition: all .3s ease;
+
+	// top
+	transform: rotate(45deg);
+
+	// bottom
+	transform: rotate(-135deg);
+
+	// left
+	transform: rotate(-45deg);
+
+	// right
+	transform: rotate(135deg);
+
+	// optional
+	&:hover {
+		transition: all .3s ease;
+		border-top: $size/10 solid darken($color, 15%);
+		border-left: $size/10 solid darken($color, 15%);	
+	}
+
+	@include center-absolute($size, $size); 
+}
+
+
+// arrow simple 3
+.arrow-rounded {
+	
+	$size: 20px;
+	$color: $color;
+
+	display: block;
+	width: $size;
+	height: $size;
+
+	// bottom
+	// transform: rotate(90deg);
+
+	// top
+	// transform: rotate(-90deg);
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: $size;
+		height: $size/5;
+		box-sizing: border-box;
+
+		border-radius: $size/5;
+		background: $color;
+
+		transition: all .3s ease;
+
+		position: relative;
+		top: $size/4;
+	}
+
+	// left
+	&:before {
+		transform-origin: 0%;
+		transform: rotate(-45deg) translate(0, $size/4.5);
+	}
+	&:after {
+		transform-origin: 100%;
+		transform: rotate(45deg) translate($size/3.5, $size/2);
+	}
+
+	// right
+	&:before {
+		transform-origin: 100%;
+		transform: rotate(45deg) translate(0, $size/4.5);
+	}
+	&:after {
+		transform-origin: 100%;
+		transform: rotate(-45deg) translate(0, -$size/4.5);
+	}
+
+
+	// optional
+	&:hover:before,
+	&:hover:after {
+		transition: all .3s ease;
+		background: darken($color, 15%);
+	}
+
+	@include center-absolute($size, $size); 
+}
+
+
+
+
+// arrow inside a circle
+.arrow-circle {
+	
+	$size: 30px;
+	$color: $color;
+
+	display: block;
+	width: $size;
+	height: $size;
+	position: relative;
+	border-radius: $size;
+	position: relative;
+	border: $size/10 solid $color;
+	box-sizing: border-box;
+
+	transition: all .3s ease;
+	
+	&:after {
+		content: "";
+		display: block;
+		width: $size/3;
+		height: $size/3;
+		transition: all .3s ease;
+
+		border-top: $size/10 solid $color;
+		border-left: $size/10 solid $color;
+		box-sizing: border-box;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -$size/6;
+		margin-left: -$size/6;
+
+		// top
+		// transform: rotate(45deg);
+		// margin-top: -$size/13;
+
+		// bottom
+		// transform: rotate(-135deg);
+		// margin-top: -$size/4.5;
+
+		// left
+		// transform: rotate(-45deg);
+		// margin-left: -$size/8;
+
+		// right
+		margin-left: -$size/4.5;
+		transform: rotate(135deg);
+
+	}
+
+	// optional
+	&:hover {
+		transition: all .3s ease;
+		border-color: darken($color, 15%);
+		&:after {
+			transition: all .3s ease;
+			border-top-color: darken($color, 15%);
+			border-left-color: darken($color, 15%);
+		}
+	}
+
+	@include center-absolute($size, $size); 
+}
