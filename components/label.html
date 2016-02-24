@@ -1,0 +1,162 @@
+	<!-- 
+
+
+	Label simple 1 
+
+
+	-->
+	<div class="card-title">Label simple 1</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="label-simple">-50%</span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;label-simple&quot;&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.label-simple {
+	$size: 30px;
+	$color: $color;
+
+	background: $color;
+	width: $size*2;
+	height: $size;
+	position: relative;
+
+	// optional
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	color: white;
+	font-size: $size/1.5;
+	line-height: $size;
+	text-align: center;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		top: 0;
+		position: absolute;
+
+		// left
+		// left: -$size;
+		// border-right-color: $color; 
+
+		// right
+		right: -$size;
+		border-left-color: $color; 
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Label simple 1 -->
+
+	
+	<div class="card-divisor"></div>
+
+
+	<!-- 
+
+
+	Label with circle
+
+
+	-->
+	<div class="card-title">Label with circle</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="label-with-circle">-50%</span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;label-with-circle&quot;&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.label-with-circle {
+	$size: 30px;
+	$color: $color;
+
+	background: $color;
+	width: $size*2;
+	height: $size;
+	position: relative;
+
+	// optional
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	color: white;
+	font-size: $size/1.5;
+	line-height: $size;
+	text-align: center;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		top: 0;
+		position: absolute;
+
+		// left
+		// left: -$size;
+		// border-right-color: $color; 
+
+		// right
+		right: -$size;
+		border-left-color: $color; 
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: $size/6;
+		height: $size/6;
+		border-radius: 100%;
+		background: white;
+		position: absolute;
+		top: 50%;
+		margin-top: -$size/12;
+
+		// left
+		// left: -$size/12;
+
+		// right
+		right: -$size/12;
+
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Label with circle-->
+
+
