@@ -249,3 +249,108 @@
 			</div>
 		<!-- / arrow rounded -->
 	</div>
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+	
+	<!-- 
+
+	
+	Arrow circle 
+
+
+	-->
+	<div class="card-title">Arrow Circle</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-circle"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-circle&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-circle {
+
+$size: 30px;
+$color: #2196f3;
+
+display: block;
+width: $size;
+height: $size;
+position: relative;
+border-radius: $size;
+position: relative;
+border: $size/10 solid $color;
+box-sizing: border-box;
+
+transition: all .3s ease;
+
+&:after {
+	content: "";
+	display: block;
+	width: $size/3;
+	height: $size/3;
+	transition: all .3s ease;
+
+	border-top: $size/10 solid $color;
+	border-left: $size/10 solid $color;
+	box-sizing: border-box;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -$size/6;
+	margin-left: -$size/6;
+
+	// top
+	// transform: rotate(45deg);
+	// margin-top: -$size/13;
+
+	// bottom
+	// transform: rotate(-135deg);
+	// margin-top: -$size/4.5;
+
+	// left
+	// transform: rotate(-45deg);
+	// margin-left: -$size/8;
+
+	// right
+	margin-left: -$size/4.5;
+	transform: rotate(135deg);
+
+}
+
+// optional
+&:hover {
+	transition: all .3s ease;
+	border-color: darken($color, 15%);
+	&:after {
+		transition: all .3s ease;
+		border-top-color: darken($color, 15%);
+		border-left-color: darken($color, 15%);
+	}
+}</code>
+				</pre>
+			</div>
+		<!-- / arrow rounded -->
+	</div>
