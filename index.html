@@ -458,6 +458,7 @@
 	<script src="src/build/clipboard.js"></script>
 
 	<script>
+		// plugin clip to board
 		new Clipboard('.copy', {
 			target: function(trigger) {
 				return trigger.nextElementSibling;
@@ -466,6 +467,7 @@
 
 		$(document).ready(function(){
 
+			// function for tabs
 			function tabs(target) {
 				$('[data-section='+target+']').show().siblings().hide();
 				$('[href='+target+']').addClass('is-active').siblings().removeClass('is-active');

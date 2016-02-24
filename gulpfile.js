@@ -16,10 +16,10 @@ var dir_build = path.join(__dirname, 'src/build');
 
 // html
 gulp.task('fileinclude', function() {
-	gulp.src(['components/index.html'])
+	gulp.src(['src/components/index.html'])
 	.pipe(fileinclude({
 		prefix: '@@',
-		basepath: './components/'
+		basepath: './src/components/'
 		}))
 	.pipe(gulp.dest(__dirname))
 	.pipe(reload({stream: true}));
