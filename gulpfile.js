@@ -9,7 +9,7 @@ var fileinclude = require('gulp-file-include');
 var reload = browserSync.reload;
 
 // paths
-var dir_components = path.join(__dirname, '/components');
+var dir_components = path.join(__dirname, '/src/components');
 var dir_src = path.join(__dirname, '/src');
 var dir_build = path.join(__dirname, 'src/build');
 
