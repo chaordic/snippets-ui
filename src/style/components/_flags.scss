@@ -1,0 +1,186 @@
+.wrap-flag {
+	border: 1px solid #ccc;
+	width: 10rem;
+	height: 10rem;
+	background: white;
+	box-shadow: 0 2px 1px rgba(0,0,0,.1);
+
+	@include center-absolute(10rem, 10rem); 
+}
+
+
+// flag 1
+.flag-1 {
+	$color: $color;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.2;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		position: absolute;
+		left: 0;
+		bottom: -$size;
+	}
+}
+
+
+
+// flag 1 plus
+.flag-1-plus {
+	$color: $color;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.2;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	// flag top
+	span {
+		$size-top: $size/4;
+
+		display: block;
+		width: $size + $size-top;
+		height: $size-top;
+
+		position: absolute;
+		top: -$size-top;
+		background: $color;
+
+		border-top-left-radius: $size;
+		border-top-right-radius: $size/2;
+
+		&:before {
+			content: "";
+			display: block;
+			width: $size-top;
+			height: $size-top;
+			background: darken($color, 10%);
+
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			border-top-left-radius: 100%;
+			border-top-right-radius: 100%;
+		}
+	}
+
+	// arrow bottom
+	&:after {
+		content: "";
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		position: absolute;
+		left: 0;
+		bottom: -$size;
+	}
+}
+
+
+
+
+// flag 2
+.flag-2 {
+	$color: $color;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.2;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	&:before,
+	&:after {
+		content: "";
+		display: inline-block;
+		border: $size/4 solid transparent;
+		position: absolute;
+		bottom: -$size/4;
+	}
+	
+	&:before {
+		left: 0;
+		border-left: $size/2 solid $color;
+	}
+
+	&:after {
+		right: 0;
+		border-right: $size/2 solid $color;
+	}
+} 
+
+// flag 3
+.flag-3 {
+	$color: $color;
+	$size: 44px;
+
+	display: block;
+	width: $size*2;
+	background: $color;
+	position: absolute;
+	top: $size*1.4;
+	right: 0;
+
+	line-height: $size/2;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $size/2.5;
+	color: white;
+
+	transform-origin: 100% 0%;
+	transform: rotate(45deg);
+
+	&:before,
+	&:after {
+		content: "";
+		display: inline-block;
+		border: $size/4 solid transparent;
+		border-bottom-color: $color;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	&:before {
+		left: -$size/2;
+		border-right-color: $color;
+	}
+
+	&:after {
+		right: -$size/2;
+		border-left-color: $color;
+	}
+}
