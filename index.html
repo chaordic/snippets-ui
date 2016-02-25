@@ -6,17 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Octopus FronPattern</title>
+	<title>FronPattern</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 	<link rel="stylesheet" href="src/build/style.css">
 </head>
 <body>
 
 	<header class="header-site container">
-		<h1>Octopus FronPattern</h1>
+		<h1>FronPattern</h1>
 		<div class="header-tabs">
 			<a href="#arrow" class="is-active">Arrow</a>
 			<a href="#label">Label</a>
+			<a href="#flag">Flag</a>
 		</div>
 	</header>
 
@@ -555,6 +556,188 @@ transition: all .3s ease;
 			</div>
 		</div>
 		<!-- / label -->
+
+		<!-- flag -->
+		<div data-section="#flag" class="section-card">
+			<div class="card">
+					<!-- 
+
+
+	Flag 1 
+
+
+	-->
+	<div class="card-title">Flag 1</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<div class="wrap-flag">
+					<span class="flag-1">-50%</span>
+				</div>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;flag-1&quot;&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.flag-1 {
+	$color: $color;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.5;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		position: absolute;
+		left: 0;
+		bottom: -$size;
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Flag 1 -->
+
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+	<!-- 
+
+
+	Flag 1 Plus
+
+
+	-->
+	<div class="card-title">Flag 1 Plus</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<div class="wrap-flag">
+					<span class="flag-1-plus"><span></span>-50%</span>
+				</div>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;flag-1-plus&quot;&gt;&lt;span&gt;&lt;/span&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.flag-1-plus {
+	$color: $color;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.2;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	// flag top
+	span {
+		$size-top: $size/4;
+
+		display: block;
+		width: $size + $size-top;
+		height: $size-top;
+
+		position: absolute;
+		top: -$size-top;
+		background: $color;
+
+		border-top-left-radius: $size;
+		border-top-right-radius: $size/2;
+
+		&:before {
+			content: "";
+			display: block;
+			width: $size-top;
+			height: $size-top;
+			background: darken($color, 10%);
+
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			border-top-left-radius: 100%;
+			border-top-right-radius: 100%;
+		}
+	}
+
+	// arrow bottom
+	&:after {
+		content: "";
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		position: absolute;
+		left: 0;
+		bottom: -$size;
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Flag 1 -->
+
+
+
+
+
+
+			</div>
+		</div>
+		<!-- / flag -->
 
 	</div>
 
