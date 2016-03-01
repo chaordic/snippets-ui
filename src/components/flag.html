@@ -279,7 +279,7 @@ Flag 3
 			    <img src="src/img/copy.svg" alt="Copy to clipboard">
 			</button>
 			<pre>
-<code class="language-html">&lt;span class=&quot;flag-2&quot;&gt;-50%&lt;/span&gt;</code>
+<code class="language-html">&lt;span class=&quot;flag-3&quot;&gt;-50%&lt;/span&gt;</code>
 			</pre>
 		</div>
 
@@ -289,7 +289,46 @@ Flag 3
 			    <img src="src/img/copy.svg" alt="Copy to clipboard">
 			</button>
 			<pre>
-<code class="language-scss"></code>
+<code class="language-scss">.flag-3 {
+	$color: $color;
+	$size: 44px;
+
+	display: block;
+	width: $size*2;
+	background: $color;
+	position: absolute;
+	top: $size*1.4;
+	right: 0;
+
+	line-height: $size/2;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $size/2.5;
+	color: white;
+
+	transform-origin: 100% 0%;
+	transform: rotate(45deg);
+
+	&:before,
+	&:after {
+		content: "";
+		display: inline-block;
+		border: $size/4 solid transparent;
+		border-bottom-color: $color;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	&:before {
+		left: -$size/2;
+		border-right-color: $color;
+	}
+
+	&:after {
+		right: -$size/2;
+		border-left-color: $color;
+	}
+}</code>
 			</pre>
 		</div>
 </div>
