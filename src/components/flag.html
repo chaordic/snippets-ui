@@ -170,6 +170,9 @@
 
 
 
+	<div class="card-divisor"></div>
+
+
 
 
 <!-- 
@@ -250,7 +253,6 @@ Flag 2
 
 
 
-
 <div class="card-divisor"></div>
 
 
@@ -268,9 +270,7 @@ Flag 3
 
 		<!-- example -->
 		<div class="coll-examples-code code-example">
-			<div class="wrap-flag">
-				<span class="flag-3">New</span>
-			</div>
+			<span class="flag-3">New</span>
 		</div>
 
 		<!-- html -->
@@ -279,7 +279,7 @@ Flag 3
 			    <img src="src/img/copy.svg" alt="Copy to clipboard">
 			</button>
 			<pre>
-<code class="language-html">&lt;span class=&quot;flag-3&quot;&gt;New&lt;/span&gt;</code>
+<code class="language-html">&lt;span class=&quot;flag-4&quot;&gt;New&lt;/span&gt;</code>
 			</pre>
 		</div>
 
@@ -289,7 +289,57 @@ Flag 3
 			    <img src="src/img/copy.svg" alt="Copy to clipboard">
 			</button>
 			<pre>
-<code class="language-scss">.flag-3 {
+<code class="language-scss"></code>
+			</pre>
+		</div>
+</div>
+<!-- / Flag 3 -->
+
+
+
+
+
+
+
+<div class="card-divisor"></div>
+
+
+
+
+<!-- 
+
+
+Flag 4
+
+
+-->
+<div class="card-title">Flag 4</div>
+<div class="card-content">
+
+		<!-- example -->
+		<div class="coll-examples-code code-example">
+			<div class="wrap-flag">
+				<span class="flag-4">New</span>
+			</div>
+		</div>
+
+		<!-- html -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-html">&lt;span class=&quot;flag-4&quot;&gt;New&lt;/span&gt;</code>
+			</pre>
+		</div>
+
+		<!-- css -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-scss">.flag-4 {
 	$color: #2196f3;
 	$size: 44px;
 
@@ -333,6 +383,84 @@ Flag 3
 		</div>
 </div>
 <!-- / Flag 3 -->
+
+
+
+
+
+
+
+
+<div class="card-divisor"></div>
+
+
+
+
+<!-- 
+
+
+Flag 5
+
+
+-->
+<div class="card-title">Flag 5</div>
+<div class="card-content">
+
+		<!-- example -->
+		<div class="coll-examples-code code-example">
+			<div class="wrap-flag">
+				<span class="flag-5"></span>
+			</div>
+		</div>
+
+		<!-- html -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-html">&lt;span class=&quot;flag-5&quot;&gt;&lt;/span&gt;</code>
+			</pre>
+		</div>
+
+		<!-- css -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-scss">.flag-5 {
+
+	$color: #2196f3;
+	$size: 50px;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		border: $size/2 solid transparent;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&:before {
+		top: (-$size/2)-1px;
+		right: (-$size/2)-1px;
+		border-top-color: white;
+		transform: rotate(-135deg);
+	}
+	&:after {
+		top: ($size/5)-1px;
+		right: ($size/5)-1px;
+		border-top-color: $color;
+		transform: rotate(45deg);
+	}
+}</code>
+			</pre>
+		</div>
+</div>
+<!-- / Flag 5 -->
 
 
 

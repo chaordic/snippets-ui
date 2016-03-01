@@ -3,7 +3,7 @@
 	width: 10rem;
 	height: 10rem;
 	background: white;
-	box-shadow: 0 2px 1px rgba(0,0,0,.1);
+	// box-shadow: 0 2px 1px rgba(0,0,0,.1);
 
 	@include center-absolute(10rem, 10rem); 
 }
@@ -143,8 +143,45 @@
 	}
 } 
 
+
 // flag 3
 .flag-3 {
+	$color: $color;
+	$size: 30px;
+
+	font-size: $size/2;
+	color: white;
+	line-height: $size;
+
+	display: block;
+	position: relative;
+	padding: 0 $size;
+	background: $color;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		border-bottom-color: $color;
+		top: 0;
+	}
+	&:before {
+		right: -$size/2;
+	}
+	&:after {
+		left: -$size/2;
+	}
+
+	@include center-absolute($size*3, $size); 
+}
+
+
+
+// flag 4
+.flag-4 {
 	$color: $color;
 	$size: 44px;
 
@@ -184,3 +221,43 @@
 		border-left-color: $color;
 	}
 }
+
+
+// flag 5
+.flag-5 {
+
+	$color: $color;
+	$size: 50px;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		border: $size/2 solid transparent;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&:before {
+		top: (-$size/2)-1px;
+		right: (-$size/2)-1px;
+		border-top-color: white;
+		transform: rotate(-135deg);
+	}
+	&:after {
+		top: ($size/5)-1px;
+		right: ($size/5)-1px;
+		border-top-color: $color;
+		transform: rotate(45deg);
+	}
+}
+
+
+
+
+
+
+
+
+
