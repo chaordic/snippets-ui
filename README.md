@@ -8,7 +8,7 @@ Este projeto tem como objetivo criar snippets de código para facilitar a criaç
 
 - Setas
 - Flags
-- Label
+- Labels
 
 
 ## Licença
