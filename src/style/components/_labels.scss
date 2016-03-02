@@ -6,6 +6,7 @@
 	width: $size*2;
 	height: $size;
 	position: relative;
+	display: block;
 
 	// optional
 	border-top-left-radius: $size/5;
@@ -42,6 +43,7 @@
 	width: $size*2;
 	height: $size;
 	position: relative;
+	display: block;
 
 	// optional
 	border-top-left-radius: $size/5;
