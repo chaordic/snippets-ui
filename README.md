@@ -1,6 +1,6 @@
 # Snippets UI
 
-Nos projetos do dia-a-dia é normal precisar colocar alguma seta, flag ou label personalizada. De primeira vista, a melhor solução seria faze-las através de imagens, porém perde-se em perfomance, poder de customização, deficuldade de manutenção e em efeitos de transição.
+Nos projetos do dia-a-dia é normal precisar colocar alguma seta, flag ou label personalizada. De primeira vista, a melhor solução seria faze-las através de imagens, porém perde-se em perfomance, poder de customização, dificuldade de manutenção e em efeitos de transição.
 
 Este projeto tem como objetivo criar snippets de código para facilitar a criação desses elementos, normalmente feitos em imagens, para **css puro**.
 
@@ -13,4 +13,4 @@ Este projeto tem como objetivo criar snippets de código para facilitar a criaç
 
 ## Licença
 
-MIT license. Veja o arquivo `LICENSE` para mais detalhes.
+MIT license. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
