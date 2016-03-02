@@ -64,7 +64,7 @@
 		// plugin clip to board
 		new Clipboard('.copy', {
 			target: function(trigger) {
-				return trigger.nextElementSibling;
+				return trigger.nextElementSibling.children[0];
 			}
 		});
 
@@ -86,7 +86,7 @@
 				var target = $(this).attr("href");
 				tabs(target);
 			});
-			
+
 		})
 	</script>
 </body>
