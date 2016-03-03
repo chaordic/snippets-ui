@@ -4,11 +4,13 @@ Nos projetos do dia-a-dia é normal precisar colocar alguma seta, flag ou label 
 
 Este projeto tem como objetivo criar snippets de código para facilitar a criação desses elementos, normalmente feitos em imagens, para **css puro**.
 
-## Elementos desenvolvidos
+## Estrutura html
 
-- Setas
-- Flags
-- Labels
+**Layout:**
+`src/components/template.html`
+
+**Componentes:**
+`src/components/*.html`
 
 
 ## Licença
