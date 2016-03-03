@@ -1,26 +1,28 @@
 // Require modules
-var path = require('path');
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
-var cssmin = require('gulp-cssmin');
-var browserSync = require('browser-sync');
-var fileinclude = require('gulp-file-include');
-var reload = browserSync.reload;
+var gulp = require('gulp'),
+	path = require('path'),
+	rename = require("gulp-rename"),
+	uglify = require('gulp-uglify'),
+	sass = require('gulp-sass'),
+	cssmin = require('gulp-cssmin'),
+	browserSync = require('browser-sync'),
+	fileinclude = require('gulp-file-include'),
+	reload = browserSync.reload;
 
 // paths
-var dir_components = path.join(__dirname, '/src/components');
-var dir_src = path.join(__dirname, '/src');
-var dir_build = path.join(__dirname, 'src/build');
+var dir_components = path.join(__dirname, '/src/components'),
+	dir_src = path.join(__dirname, '/src'),
+	dir_build = path.join(__dirname, 'src/build');
 
 
 // html
 gulp.task('fileinclude', function() {
-	gulp.src(['src/components/index.html'])
+	gulp.src(['src/components/template.html'])
 	.pipe(fileinclude({
 		prefix: '@@',
 		basepath: './src/components/'
 		}))
+	.pipe(rename("index.html"))
 	.pipe(gulp.dest(__dirname))
 	.pipe(reload({stream: true}));
 });

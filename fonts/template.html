@@ -1,0 +1,1110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Snippets UI</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+	<link rel="stylesheet" href="src/build/style.css">
+</head>
+<body>
+
+	<header class="header-site container">
+		<h1>Snippets UI</h1>
+
+		<p class="github-actions">
+			<a class="github-button" href="https://github.com/chaordic/snippets-ui" data-icon="octicon-star" data-style="mega" data-count-href="/chaordic/snippets-ui/stargazers" data-count-api="/repos/chaordic/snippets-ui#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star chaordic/snippets-ui on GitHub">Star</a>
+			<a class="github-button" href="https://github.com/chaordic/snippets-ui/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/chaordic/snippets-ui/network" data-count-api="/repos/chaordic/snippets-ui#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork chaordic/snippets-ui on GitHub">Fork</a>
+		</p>
+
+		<div class="header-tabs">
+			<a href="#arrow" class="is-active">Arrow</a>
+			<a href="#label">Label</a>
+			<a href="#flag">Flag</a>
+		</div>
+	</header>
+
+	<div>
+
+		<!-- arrow -->
+		<section class="section-card selected" data-section="#arrow">
+			<div class="card">
+					<!-- 
+
+
+	Arrow simple 1 
+
+
+	-->
+	<div class="card-title">Arrow simple 1</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-simple-1"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-simple-1&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-simple-1 {
+	
+	$size: 15px;
+	$color: #2196f3;
+
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		display: block;
+
+		border: $size solid transparent;
+
+		// top
+		// border-bottom-color: $color;
+
+		// bottom
+		// border-top-color: $color;
+
+		// left
+		// border-right-color: $color;
+
+		// right
+		border-left-color: $color;
+
+		transition: all .3s ease;
+	}
+
+	// optional
+	&:hover:after {
+		transition: all .3s ease;
+		border-left-color: darken($color, 15%);
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / arrow simple 1 -->
+
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+
+	<!-- 
+
+	
+	Arrow simple 2 
+
+
+	-->
+	<div class="card-title">Arrow simple 2</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-simple-2"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-simple-2&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-simple-2 {
+	
+	$size: 20px;
+	$color: #2196f3;
+
+	display: block;
+	width: $size;
+	height: $size;
+	position: relative;
+
+	border-top: $size/10 solid $color;
+	border-left: $size/10 solid $color;
+	transition: all .3s ease;
+
+	// top
+	transform: rotate(45deg);
+
+	// bottom
+	transform: rotate(-135deg);
+
+	// left
+	transform: rotate(-45deg);
+
+	// right
+	transform: rotate(135deg);
+
+	// optional
+	&:hover {
+		transition: all .3s ease;
+		border-top: $size/10 solid darken($color, 15%);
+		border-left: $size/10 solid darken($color, 15%);	
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / arrow simple 2 -->
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+	
+	<!-- 
+
+	
+	Arrow rounded 
+
+
+	-->
+	<div class="card-title">Arrow rounded</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-rounded"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-rounded&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-rounded {
+	
+	$size: 20px;
+	$color: #2196f3;
+
+	display: block;
+	width: $size;
+	height: $size;
+
+	// bottom
+	// transform: rotate(90deg);
+
+	// top
+	// transform: rotate(-90deg);
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: $size;
+		height: $size/5;
+		box-sizing: border-box;
+
+		border-radius: $size/5;
+		background: $color;
+
+		transition: all .3s ease;
+
+		position: relative;
+		top: $size/4;
+	}
+
+	// left
+	&:before {
+		transform-origin: 0%;
+		transform: rotate(-45deg) translate(0, $size/4.5);
+	}
+	&:after {
+		transform-origin: 100%;
+		transform: rotate(45deg) translate($size/3.5, $size/2);
+	}
+
+	// right
+	&:before {
+		transform-origin: 100%;
+		transform: rotate(45deg) translate(0, $size/4.5);
+	}
+	&:after {
+		transform-origin: 100%;
+		transform: rotate(-45deg) translate(0, -$size/4.5);
+	}
+
+
+	// optional
+	&:hover:before,
+	&:hover:after {
+		transition: all .3s ease;
+		background: darken($color, 15%);
+	}
+}</code>
+				</pre>
+			</div>
+		<!-- / arrow rounded -->
+	</div>
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+	
+	<!-- 
+
+	
+	Arrow circle 
+
+
+	-->
+	<div class="card-title">Arrow Circle</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="arrow-circle"></span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;arrow-circle&quot;&gt;&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.arrow-circle {
+	
+	$size: 30px;
+	$color: #2196f3;
+
+	display: block;
+	width: $size;
+	height: $size;
+	position: relative;
+	border-radius: $size;
+	position: relative;
+	border: $size/10 solid $color;
+	box-sizing: border-box;
+
+	transition: all .3s ease;
+	
+	&:after {
+		content: "";
+		display: block;
+		width: $size/3;
+		height: $size/3;
+		transition: all .3s ease;
+
+		border-top: $size/10 solid $color;
+		border-left: $size/10 solid $color;
+		box-sizing: border-box;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -$size/6;
+		margin-left: -$size/6;
+
+		// top
+		// transform: rotate(45deg);
+		// margin-top: -$size/13;
+
+		// bottom
+		// transform: rotate(-135deg);
+		// margin-top: -$size/4.5;
+
+		// left
+		// transform: rotate(-45deg);
+		// margin-left: -$size/8;
+
+		// right
+		margin-left: -$size/4.5;
+		transform: rotate(135deg);
+
+	}
+
+	// optional
+	&:hover {
+		transition: all .3s ease;
+		border-color: darken($color, 15%);
+		&:after {
+			transition: all .3s ease;
+			border-top-color: darken($color, 15%);
+			border-left-color: darken($color, 15%);
+		}
+	}
+}</code>
+				</pre>
+			</div>
+		<!-- / arrow rounded -->
+	</div>
+
+			</div>
+		</section>
+		<!-- / arrow -->
+
+		<!-- label -->
+		<div data-section="#label" class="section-card">
+			<div class="card">
+					<!-- 
+
+
+	Label simple 1 
+
+
+	-->
+	<div class="card-title">Label simple 1</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="label-simple">-50%</span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;label-simple&quot;&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.label-simple {
+	$size: 30px;
+	$color: #2196f3;
+
+	background: $color;
+	width: $size*2;
+	height: $size;
+	position: relative;
+	display: block;
+
+	// optional
+	border-top-left-radius: $size/5;
+	border-bottom-left-radius: $size/5;
+
+	color: white;
+	font-size: $size/1.5;
+	line-height: $size;
+	text-align: center;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		top: 0;
+		position: absolute;
+
+		// left
+		// left: -$size;
+		// border-right-color: $color; 
+
+		// right
+		right: -$size;
+		border-left-color: $color; 
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Label simple 1 -->
+
+	
+	<div class="card-divisor"></div>
+
+
+	<!-- 
+
+
+	Label with circle
+
+
+	-->
+	<div class="card-title">Label with circle</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<span class="label-with-circle">-50%</span>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;label-with-circle&quot;&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.label-with-circle {
+	$size: 30px;
+	$color: #2196f3;
+
+	background: $color;
+	width: $size*2;
+	height: $size;
+	position: relative;
+	display: block;
+
+	// optional
+	border-top-left-radius: $size/5;
+	border-bottom-left-radius: $size/5;
+
+	color: white;
+	font-size: $size/1.5;
+	line-height: $size;
+	text-align: center;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		top: 0;
+		position: absolute;
+
+		// left
+		// left: -$size;
+		// border-right-color: $color; 
+
+		// right
+		right: -$size;
+		border-left-color: $color; 
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: $size/6;
+		height: $size/6;
+		border-radius: 100%;
+		background: white;
+		position: absolute;
+		top: 50%;
+		margin-top: -$size/12;
+
+		// left
+		// left: -$size/12;
+
+		// right
+		right: -$size/12;
+
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Label with circle-->
+
+
+
+			</div>
+		</div>
+		<!-- / label -->
+
+		<!-- flag -->
+		<div data-section="#flag" class="section-card">
+			<div class="card">
+					<!-- 
+
+
+	Flag 1 
+
+
+	-->
+	<div class="card-title">Flag 1</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<div class="wrap-flag">
+					<span class="flag-1">-50%</span>
+				</div>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;flag-1&quot;&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.flag-1 {
+	$color: #2196f3;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.2;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	&:before {
+		content: "";
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		position: absolute;
+		left: 0;
+		bottom: -$size;
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Flag 1 -->
+
+
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+	<!-- 
+
+
+	Flag 1 Plus
+
+
+	-->
+	<div class="card-title">Flag 1 Plus</div>
+	<div class="card-content">
+
+			<!-- example -->
+			<div class="coll-examples-code code-example">
+				<div class="wrap-flag">
+					<span class="flag-1-plus"><span></span>-50%</span>
+				</div>
+			</div>
+
+			<!-- html -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-html">&lt;span class=&quot;flag-1-plus&quot;&gt;&lt;span&gt;&lt;/span&gt;-50%&lt;/span&gt;</code>
+				</pre>
+			</div>
+
+			<!-- css -->
+			<div class="coll-examples-code">
+				<button class="copy">
+				    <img src="src/img/copy.svg" alt="Copy to clipboard">
+				</button>
+				<pre>
+<code class="language-scss">.flag-1-plus {
+	$color: #2196f3;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.2;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	// flag top
+	span {
+		$size-top: $size/4;
+
+		display: block;
+		width: $size + $size-top;
+		height: $size-top;
+
+		position: absolute;
+		top: -$size-top;
+		background: $color;
+
+		border-top-left-radius: $size;
+		border-top-right-radius: $size/2;
+
+		&:before {
+			content: "";
+			display: block;
+			width: $size-top;
+			height: $size-top;
+			background: darken($color, 10%);
+
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			border-top-left-radius: 100%;
+			border-top-right-radius: 100%;
+		}
+	}
+
+	// arrow bottom
+	&:after {
+		content: "";
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		position: absolute;
+		left: 0;
+		bottom: -$size;
+	}
+}</code>
+				</pre>
+			</div>
+	</div>
+	<!-- / Flag 1 Plus -->
+
+
+
+	<div class="card-divisor"></div>
+
+
+
+
+<!-- 
+
+
+Flag 2
+
+
+-->
+<div class="card-title">Flag 2</div>
+<div class="card-content">
+
+		<!-- example -->
+		<div class="coll-examples-code code-example">
+			<div class="wrap-flag">
+				<span class="flag-2">-50%</span>
+			</div>
+		</div>
+
+		<!-- html -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-html">&lt;span class=&quot;flag-2&quot;&gt;-50%&lt;/span&gt;</code>
+			</pre>
+		</div>
+
+		<!-- css -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-scss">.flag-2 {
+	$color: #2196f3;
+	$size: 40px;
+
+	color: white;
+	line-height: $size*1.2;
+	text-align: center;
+	font-size: $size/2.5;
+	font-weight: bold;
+
+	background: $color;
+	display: block;
+	width: $size;
+
+	position: absolute;
+	top: 0;
+	right: $size/2;
+
+	&:before,
+	&:after {
+		content: "";
+		display: inline-block;
+		border: $size/4 solid transparent;
+		position: absolute;
+		bottom: -$size/4;
+	}
+	
+	&:before {
+		left: 0;
+		border-left: $size/2 solid $color;
+	}
+
+	&:after {
+		right: 0;
+		border-right: $size/2 solid $color;
+	}
+}</code>
+			</pre>
+		</div>
+</div>
+<!-- / Flag 2 -->
+
+
+
+
+<div class="card-divisor"></div>
+
+
+
+
+<!-- 
+
+
+Flag 3
+
+
+-->
+<div class="card-title">Flag 3</div>
+<div class="card-content">
+
+		<!-- example -->
+		<div class="coll-examples-code code-example">
+			<span class="flag-3">New</span>
+		</div>
+
+		<!-- html -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-html">&lt;span class=&quot;flag-3&quot;&gt;New&lt;/span&gt;</code>
+			</pre>
+		</div>
+
+		<!-- css -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-scss">.flag-3 {
+	$color: #2196f3;
+	$size: 30px;
+
+	font-size: $size/2;
+	color: white;
+	line-height: $size;
+
+	display: block;
+	position: relative;
+	width: $size*3;
+	padding: 0 $size;
+	background: $color;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		border: $size/2 solid transparent;
+		border-top-color: $color;
+		border-bottom-color: $color;
+		top: 0;
+	}
+	&:before {
+		right: -$size/2;
+	}
+	&:after {
+		left: -$size/2;
+	}
+}</code>
+			</pre>
+		</div>
+</div>
+<!-- / Flag 3 -->
+
+
+
+
+
+
+
+<div class="card-divisor"></div>
+
+
+
+
+<!-- 
+
+
+Flag 4
+
+
+-->
+<div class="card-title">Flag 4</div>
+<div class="card-content">
+
+		<!-- example -->
+		<div class="coll-examples-code code-example">
+			<div class="wrap-flag">
+				<span class="flag-4">New</span>
+			</div>
+		</div>
+
+		<!-- html -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-html">&lt;span class=&quot;flag-4&quot;&gt;New&lt;/span&gt;</code>
+			</pre>
+		</div>
+
+		<!-- css -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-scss">.flag-4 {
+	$color: #2196f3;
+	$size: 44px;
+
+	display: block;
+	width: $size*2;
+	background: $color;
+	position: absolute;
+	top: $size*1.4;
+	right: 0;
+
+	line-height: $size/2;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $size/2.5;
+	color: white;
+
+	transform-origin: 100% 0%;
+	transform: rotate(45deg);
+
+	&:before,
+	&:after {
+		content: "";
+		display: inline-block;
+		border: $size/4 solid transparent;
+		border-bottom-color: $color;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	&:before {
+		left: -$size/2;
+		border-right-color: $color;
+	}
+
+	&:after {
+		right: -$size/2;
+		border-left-color: $color;
+	}
+}</code>
+			</pre>
+		</div>
+</div>
+<!-- / Flag 3 -->
+
+
+
+
+
+
+
+
+<div class="card-divisor"></div>
+
+
+
+
+<!-- 
+
+
+Flag 5
+
+
+-->
+<div class="card-title">Flag 5</div>
+<div class="card-content">
+
+		<!-- example -->
+		<div class="coll-examples-code code-example">
+			<div class="wrap-flag">
+				<span class="flag-5"></span>
+			</div>
+		</div>
+
+		<!-- html -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-html">&lt;span class=&quot;flag-5&quot;&gt;&lt;/span&gt;</code>
+			</pre>
+		</div>
+
+		<!-- css -->
+		<div class="coll-examples-code">
+			<button class="copy">
+			    <img src="src/img/copy.svg" alt="Copy to clipboard">
+			</button>
+			<pre>
+<code class="language-scss">.flag-5 {
+
+	$color: #2196f3;
+	$size: 50px;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		border: $size/2 solid transparent;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&:before {
+		top: (-$size/2)-1px;
+		right: (-$size/2)-1px;
+		border-top-color: white;
+		transform: rotate(-135deg);
+	}
+	&:after {
+		top: ($size/5)-1px;
+		right: ($size/5)-1px;
+		border-top-color: $color;
+		transform: rotate(45deg);
+	}
+}</code>
+			</pre>
+		</div>
+</div>
+<!-- / Flag 5 -->
+
+
+
+
+			</div>
+		</div>
+		<!-- / flag -->
+
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="src/build/prism.js"></script>
+	<script src="src/build/clipboard.js"></script>
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+	<script>
+		// plugin clip to board
+		new Clipboard('.copy', {
+			target: function(trigger) {
+				return trigger.nextElementSibling.children[0];
+			}
+		});
+
+		$(document).ready(function(){
+
+			// function for tabs
+			function tabs(target) {
+				$('[data-section='+target+']').show().siblings().hide();
+				$('[href='+target+']').addClass('is-active').siblings().removeClass('is-active');
+			}
+
+			// tabs init
+			var CurrentHash = window.location.hash;
+			tabs(CurrentHash);
+
+			// tabs
+			$('.header-tabs a').on('click', function(e){
+				e.preventDefault;
+				var target = $(this).attr("href");
+				tabs(target);
+			});
+
+		})
+	</script>
+</body>
+</html>
