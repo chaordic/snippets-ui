@@ -1,18 +1,18 @@
 # Snippets UI
 
-Nos projetos do dia-a-dia é normal precisar colocar alguma seta, flag ou label personalizada. De primeira vista, a melhor solução seria faze-las através de imagens, porém perde-se em perfomance, poder de customização, dificuldade de manutenção e em efeitos de transição.
+In our daily projects, elements like arrows, flags and custom labels are very common. At first glance, using an image would be the best solution, however, we lose in performance, customization, maintenance and CSS effects, like transitions and animations.
 
-Este projeto tem como objetivo criar snippets de código para facilitar a criação desses elementos, normalmente feitos em imagens, para **css puro**.
+This project aims to make easier the creation of these elements using **only css**.
 
-## Estrutura html
+## HTML structure
 
 **Layout:**
 `src/components/template.html`
 
-**Componentes:**
+**Components:**
 `src/components/*.html`
 
 
-## Licença
+## License
 
-MIT license. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+[MIT License](/LICENSE).
