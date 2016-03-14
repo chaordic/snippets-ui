@@ -143,6 +143,44 @@
 	}
 } 
 
+// flag horizontal
+.flag-horizontal {
+	$color: $color;
+	$size: 30px;
+
+	font-size: $size/2;
+	color: white;
+	line-height: $size;
+	white-spacing: no-wrap;
+
+	display: inline-block;
+	padding: 0 $size/3;
+	background: $color;
+	position: absolute;
+	top: 5%;
+	left: -$size/3;
+	&:before {
+		content: "";
+		display: block;
+		border: $size/5 transparent solid;
+		border-left-color: darken($color,15%);
+		position: absolute;
+		left: 0;
+		bottom: -$size/2.5; 
+		transform: rotate(-45deg);
+		transform-origin: 0% 0%;
+	}
+	&:after {
+		content: "";
+		display: block;
+		border: $size/2 transparent solid;
+		border-left-color: $color;
+		position: absolute;
+		right: -$size;
+		top: 0; 
+	}
+}
+
 
 // flag 3
 .flag-3 {
